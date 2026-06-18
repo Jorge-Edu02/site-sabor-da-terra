@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #708238;
+}
+
+header{
+    position: sticky; /*Para fazer o cabeçalho continuar visível ao rolar a página*/
+    z-index: 1000; /*Faz com que o cabeçalho fique por cima de todo conteúdo*/
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%; /*15px do topo, e 5% da direita. % para acompanhar a tela*/
+    background-color: #013220;
+}
+
+.Espaco_marca{
+    align-items: center;
+    display: flex;
+    gap: 12px;
+}
+
+.logo{
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h1{
+    color: white;
+    font-family: "Vollkorn", serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo p{
+  font-family: "DM Sans", sans-serif;
+  color: white;
+  font-size: 13px;
+}
+
+.espaco_perfil{
+    display:flex;
+    gap: 15px;
+    align-items:center
+}
+
+.espaco_perfil label{
+    color: white;
+    align-items: center;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+}
+
+nav{
+    width: 100%;
+    min-height: 64px; /*Para deixar o espaço mínimo de altura*/
+    padding: 16px 5%; /*16px do topo, e 5% da direita. % para acompanhar a tela*/
+    display: flex;
+    flex-wrap: wrap; /*Para quebrar os links caso a tela for pequena*/
+    background-color: white;
+    gap: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /*Sombra na parte inferior para efeito flutuante*/
+    position: relative; /*Para ficar  visualmente acima de outro elemento*/
+    z-index: 10;
+}
+
+.menu_inicio{
+    background-color: #c1121f;
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+    color: white;
+    width: 80px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease; /*Transição para o efeito de sobreposição*/
+}
+
+.menu_inicio:hover{
+    transform: scale(1.10); /*Aumenta o tamanho do botão*/
+    background-color: #780000; /*Tom de vermelho mais elegante*/
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /*Sombra de efeito flutuante*/
+    color: white;
+}
+
+nav a{
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    color: #3fa34d;
+    display: inline-flex;/*inline-flex os elementos ficarem na mesma linha e se ajusta ao tamanho da tela*/
+    align-items: center; /*Centraliza os itens verticalmente*/
+}
+
+nav a:hover{
+    color: #013220; 
+}
+
+.Sacola{
+    width: 300px;
+    height: 550px;
+    background-color: white;
+    box-shadow: rgb(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 5%;
+    margin-left: 38%;
+}
+
+h3{
+    font-family: "Vollkorn", serif;
+}
+
+.itens_sacola{
+    font-family: "DM Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    border-style: groove;
+    border-radius: 5px;
+    padding: 2%;
+}
+
+.rodape_sacola{
+    display: flex;
+    flex-direction: column;
+    margin-top: 360px;
+    gap: 10px;
+}
+
+.montante_total{
+    display: flex;
+    justify-content: space-between;
+    border-style: groove;
+    border-radius: 5px;
+    padding: 3%;
+}
+
+h5{
+    font-family: "Vollkorn", serif;
+}
+
+.total_da_sacola{
+    font-family: "Lora", serif;
+}
+
+.conferir_botao{
+    font-family: "DM Sans", sans-serif;
+    background-color: #c1121f;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-style: none;
+}
+
+.conferir_botao:hover{
+    transform: scale(1.10); /*Aumenta o tamanho do botão*/
+    background-color: #780000; /*Tom de vermelho mais elegante*/
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /*Sombra de efeito flutuante*/
+    color: white;
+}
+
+@media (max-width: 768px){
+
+    /* O cabeçalho deixa a logo, a pesquisa e o perfil na vertical um embaixo do outro*/
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* O menu de navegação  deixa os links centralizados */
+    nav {
+        justify-content: center;
+        padding-left: 0;
+        gap: 10px;
+    }
+
+    .sacola {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}

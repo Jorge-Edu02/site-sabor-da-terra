@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="icon" type="image/x-icon" href="./images/Logo Original.png">
+    <title>Cadastro/login</title>
+</head>
+<body>
+   <div class="container">
+      <div class="lgo_cd">
+         <img src="./images/Logo Original.png" type="logo" alt="imagem" width="55" height="55">
+         <h1>Sabor da Terra</h1>
+      </div>
+      <h2>Crie sua conta</h2>
+      <form id="formCadastro">
+         <div class="formulario2">
+            <label>Nome completo</label>
+            <input type="text" id="nome" autocomplete="name"  minlength="3" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$" placeholder="ex.: Ana Christina" required ><br>
+            <br>
+            <label>E-mail</label>
+            <input type="email" id="email" autocomplete="username" placeholder="ex.: ana@email.com" required><br>
+            <br>
+            <label>Senha</label>
+            <input type="password" id="senha" autocomplete="new-password" minlength="8" placeholder="Crie uma senha..." required><br>
+            <br>
+            <label>Telefone(opcional)</label>
+            <input type="tel" id="telefone" inputmode="tel" pattern="(?:\(?\d{2}\)?\s?)?\d{4,5}-?\d{4}" placeholder="(34) 99999-9999"><br>
+            <br>
+            <label>Bairro</label>
+            <input type="text" id="bairro"  minlength="3" maxlength="50" placeholder="ex.: Centro" required><br>
+            <br>
+            <label>Rua e Número</label>
+            <input type="text" id="rua"  autocomplete="address-line1" placeholder="ex.: Rua das Borboletas 142" required><br>
+            <br>
+            <button type="submit" >Cadastrar</button>
+         </div>
+      </form>
+      <p class="copyright">&copy 2026 SabordaTerra</p>
+   </div>
+   <script src="sabordaterra.js"></script>
+</body>
+</html>

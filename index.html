@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/Logo Original.png">
+   
+    <title>Sabor da Terra</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <div class="Espaco_marca">
+            <a href="#"><img src="./images/Logo Original.png" width="65px" height="65px" alt="Logo Sabor da Terra"></a>
+            <div class="logo">
+                <h1>SABOR DA TERRA</h1>
+                <p>Produtos orgânicos e artesanais</p>
+            </div>
+        </div>
+        
+        <div class="Area_de_Pesquisa">
+          <input type="search" id="barraPesquisa" placeholder="Buscar produtos">
+          <a><img id="iconeLupa" src="./images/circle.png" width="30px" height="30px" alt="Botão de Pesquisa"></a>
+        </div>
+
+       
+
+        <div class="espaco_perfil">
+
+            <span id="areaUsuario">
+                Olá, faça seu login ou cadastre-se
+            </span>
+
+            <a href="login.html" id="linkLogin">
+                <img src="./images/profile.png" width="30px" height="30px" alt="Login">
+            </a>
+
+            <a href="javascript:void(0)" id="abrirSacola">
+                <img src="./images/shopping-bag.png" width="30px" height="30px" alt="Sacola">
+            </a>
+
+        </div>
+    </header>
+
+    <nav>
+        <a class="menu_inicio" href="Index.html" target="_self"><strong>Início</strong></a>
+        <a href="produtos.html#verduras"><strong>Verduras</strong></a>
+        <a href="produtos.html#legumes"><strong>Legumes</strong></a>
+        <a href="produtos.html#frutas"><strong>Frutas</strong></a>
+        <a href="produtos.html#laticinios"><strong>Laticínios</strong></a>
+        <a href="produtos.html#queijos-artesanais"><strong>Queijos artesanais</strong></a>
+        <a href="produtos.html#geleias-artesanais"><strong>Geleias artesanais</strong></a>
+        <a href="produtos.html#sucos-naturais"><strong>Sucos Naturais</strong></a>
+        <a href="produtos.html#paes-artesanais"><strong>Pães artesanais</strong></a>
+    </nav>
+
+    <section class="fundo_banner">
+        <img src="./images/Banner Cesta.png" width="95%" height="auto" alt="promoção">
+    </section>
+
+    <section  id="secaoCestas" class="Espaco_produtos">
+        <div class="area_do_titulo">
+            <img src="./images/coffee.png" width="35px" height="35px" alt="xícara">
+            <h2>Cestas de café da manhã</h2>
+        </div>
+        <div class="cards_produtos">
+            <article>
+                    <picture>
+                            <source media="(max-width: 700px)" 
+                            srcset="./images/pequena300.png" type="image.png">
+
+                            <source media="(max-width: 1050px)" 
+                            srcset="./images/pequena700.png" type="image.png">
+
+                            <img src="./images/pequena1000.png" alt="imagem" width="200" height="200">
+                    </picture>
+                    <h1>Cesta Pequena</h1>
+                    <span>R$59,90</span>
+                    <button class="Comprar">Sacola</button>
+                    <details>
+                        <summary>
+                            <h3 id="Título1" class="cestas">Ver mais</h3>
+                        </summary>
+                        <ul>
+                            <li>Queijo- 1un</li>
+                            <li>Suco natural 500ml- 1un</li>
+                            <li>Cacho de uva- 1un</li>
+                            <li>Pão Integral- 1un</li>
+                            <li>Manteiga artesanal- 1un</li>
+                            <li>Geleia de uva- 1un</li>
+                            <li>Leite integral- 1un</li>
+                        </ul>
+                    </details>
+            </article>
+
+            <article>
+                <picture>
+                    <source media="(max-width: 700px)" 
+                    srcset="./images/media300.png" type="image.png">
+
+                    <source media="(max-width: 1050px)" 
+                    srcset="./images/media700.png" type="image.png">
+
+                    <img src="./images/media1000.png" alt="imagem" width="200" height="200">
+                </picture>
+                <h1>Cesta Média</h1>
+                <span>R$99,90</span>
+                <button class="Comprar">Sacola</button>
+                <details>
+                    <summary>
+                        <h3 id="Titulo2" class="cestas">Ver mais</h3>
+                    </summary>
+                    <ul>
+                        <li>Requeijão- 1un</li>
+                        <li>Suco natural 500ml- 1un</li>
+                        <li>Mamão- 1un</li>
+                        <li>Requeijão cremoso- 1un</li>
+                        <li>Geleia de morango- 1un</li>
+                        <li>Pães de queijo artesanais- 6un</li>
+                        <li>Geleia de amora- 1un</li>
+                        <li>Baguete artesanal- 1un</li>
+                        <li>Doce de leite artesanal- 1un</li>
+                        <li>Kiwi- 3un</li>
+                    </ul>                    
+                </details>
+            </article>
+
+            <article>
+                <picture>
+                    <source media="(max-width: 700px)" 
+                    srcset="./images/Cestagrande300.png" type="image.png">
+
+                    <source media="(max-width: 1050px)" 
+                    srcset="./images/Cestagrande700.png" type="image.png">
+
+                    <img src="./images/Cestagrande1000.png" alt="imagem" width="200" height="200">
+                </picture>
+                <h1>Cesta Grande</h1>
+                <span>R$169,90</span>
+                <button class="Comprar">Sacola</button>
+                <details>
+                    <summary>
+                        <h3 id="Titulo3" class="cestas">Ver mais</h3>
+                    </summary>
+                    <ul> 
+                        <li>Requeijão - 1un</li>
+                        <li>Queijo- 1un</li>
+                        <li>Pães artesanais - 3un</li>
+                        <li>Pães de milho - 2un</li>
+                        <li>Pães de queijo artesanais- 12un</li>
+                        <li>Pão baguete artesanal- 1un</li>
+                        <li>Suco natura 500ml- 4un</li>
+                        <li>Mamão- 1un</li>
+                        <li>Morangos- 10un</li>
+                        <li>Geléias (amora e morango)- 2 un</li>
+                        <li>Requeijãocremoso - 1un</li>
+                        <li>Doce de leite - 1un</li>
+                    </ul>
+                </details> 
+            </article>
+
+            <article>
+                <picture>
+                    <source media="(max-width: 700px)" 
+                    srcset="./images/Cestafamilia300.png" type="image.png">
+
+                    <source media="(max-width: 1050px)" 
+                    srcset="./images/Cestafamilia700.png" type="image.png">
+
+                    <img src="./images/Cestafamilia1000.png" alt="imagem" width="200" height="200">
+                </picture>
+                <h1>Cesta Família</h1>
+                <span>R$249,90</span>
+                <button class="Comprar">Sacola</button>
+                <details>
+                    <summary>
+                        <h3 id="Titulo4" class="cestas">Ver mais</h3>
+                    </summary>
+                    <ul>
+                        <li>Requeijão- 2un</li>
+                        <li>Queijo provolone- 1un</li>
+                        <li>Queijo Brie- 1un</li>
+                        <li>Croissant Artesanal- 5un</li>
+                        <li>Pães artesanais- 6un</li>
+                        <li>Pães de milho- 2un</li>
+                        <li>Suco Natural- 500ml</li>
+                        <li>Abacaxi- 2un</li>
+                        <li>Manteiga Artesanal- 2un</li>
+                        <li>Requeijão cremoso- 1un</li>
+                        <li>Geleia de Morango- 1un</li>
+                        <li>Pães de queijo artesanais- 20un</li>
+                        <li>Geleia de amora- 1un</li>
+                        <li>Goiabas- 5un</li>
+                        <li>Iogurte artesanal- 4un</li>
+                        <li>Baguete artesanal- 4un</li>
+                        <li>Doce de leite artesanal- 3un</li>
+                        <li>Leite Integral- 500ml</li>
+                        <li>Morango- 10un</li>
+                    </ul>
+                </details>
+            </article>
+        </div>
+    </section>
+
+    <section class="sobre">
+        <h1><strong>Sobre nós</strong></h1>
+        <p>A história da empresa Sabor da Terra começou com um sonho simples: levar alimentos mais naturais, frescos e produzidos com carinho<br> para a mesa das pessoas.
+        Inspirada pelos valores da tradição, da qualidade e do respeito à natureza, a empresa nasceu da vontade de valorizar<br>os produtores locais e oferecer produtos orgânicos e artesanais feitos de forma cuidadosa e saudável.
+        No início, o negócio começou pequeno,<br> atendendo clientes  da comunidade com frutas, verduras, queijos, pães e geleias produzidos artesanalmente.
+        Com o passar do tempo,<br> a qualidade<br>dos produtos e o atendimento próximo conquistaram a confiança dos consumidores, fazendo com  que a marca crescesse e se tornasse referência<br>em produtos naturais e caseiros.
+        A Sabor da Terra acredita que a  alimentação vai além do consumo: ela representa saúde, bem-estar e conexão<br> com a origem dos alimentos. Por isso, a empresa busca trabalhar com ingredientes frescos, selecionados e produzidos de maneira sustentável,<br> preservando o sabor tradicional e valorizando o trabalho artesanal.
+        Hoje, a empresa continua crescendo sem perder sua essência familiar e acolhedora.<br> Seu objetivo é proporcionar aos clientes uma experiência única, oferecendo alimentos de qualidade que unem sabor, cuidado e tradição, mantendo<br>sempre o compromisso com a natureza e com a satisfação de cada pessoa que escolhe a marca.</p>
+    </section>
+
+    <section class="Secao_duvida">
+        <div class="area_de_duvida">
+            <h2>Ficou com alguma dúvida?</h2>
+        </div>
+
+        <form id="formDuvida">
+            <input type="email" id="emailDuvida" required placeholder="Digite seu e-mail...">
+            <br>
+            <input type="text" id="textoDuvida" required placeholder="Digite sua dúvida...">
+            <br>
+            <button type="submit" class="botao_enviar">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="E_logo">
+            <a><img src="./images/Logo Original.png" width="55" height="55" alt="Logo Sabor da Terra"></a>
+            <div class="bloco_logo">
+                <h1>SABOR DA TERRA</h1>
+                <p>Produtos orgânicos e artesanais</p>
+            </div>
+        </div>
+        <div class="bloco_do_relatorio">
+            <a href="RelatorioDeUtilizacao.pdf">Relatório Técnico</a>
+            <p>Empresa fictícia</p>
+            <p>Desenvolvido por <a href="https://github.com/Jorge-Edu02">Jorge Eduardo Silva Alves <br> & Ana Christina Oliveira Siqueira</a></p>
+        </div>
+        <address>
+            <p>sabordaterra@gmail.com</p>
+            <p>+55 (34) 9 9999-9999</p>
+            <p>CEP 38999-999</p>
+        </address>
+        <p class="copyright">&copy 2026 SabordaTerra</p>
+    </footer>
+
+    <main class="sacola" id="menu">
+        <div class="menu_sacola">
+            <h3>Minha Sacola</h3>
+            <button id="btnFecharSacola" style="background: none; border: none; font-size: 20px; cursor: pointer;">✕</button>
+            <div class="itens_sacola">teste 1</div>
+        </div>
+
+        <div class="rodape_sacola">
+            <div class="montante_total">
+                <h5>Total</h5>
+                <div class="total_da_sacola">$0.00</div>
+            </div>
+            <select id="formaPagamento">
+                <option value="Pix">Pix</option>
+                <option value="Cartão de Crédito">Cartão de Crédito</option>
+                <option value="Cartão de Débito">Cartão de Débito</option>
+                <option value="Dinheiro">Dinheiro</option>
+            </select>
+            <button class="finalizar_btn" id="finalizarCompra">Finalizar Compra</button>
+            <a href="produtos.html" target="_blank" class="continuar_btn">Continuar comprando</a>
+        </div>
+    </main>
+
+    <script>
+
+        let usuarioLogado = localStorage.getItem("usuarioLogado");
+
+        if(usuarioLogado){
+
+            document.getElementById("areaUsuario").textContent =
+            "Olá, " + usuarioLogado;
+
+            document.getElementById("linkLogin").href = "#";
+        }
+
+    </script>
+    <script src="sabordaterra.js" ></script>
+</body>
+</html>

@@ -1,0 +1,639 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #708238;
+}
+
+header{
+    position: sticky; /*Para fazer o cabeçalho continuar visível ao rolar a página*/
+    z-index: 1000; /*Faz com que o cabeçalho fique por cima de todo conteúdo*/
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%; /*15px do topo, e 5% da direita. % para acompanhar a tela*/
+    background-color: #013220;
+}
+
+.Espaco_marca{
+    align-items: center;
+    display: flex;
+    gap: 12px;
+}
+
+.logo{
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h1{
+    color: white;
+    font-family: "Vollkorn", serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo p{
+  font-family: "DM Sans", sans-serif;
+  color: white;
+  font-size: 13px;
+}
+
+.Area_de_Pesquisa{
+    display: flex;
+    gap: 10px;
+}
+
+.Area_de_Pesquisa input{
+    background-color: rgb(224, 224, 224);
+    width: 100%; /* Ocupa  todo o espaço da tela*/
+    max-width: 345px; /* porém não passa de 345px*/
+    display: flex;
+    height: 15px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+    border: none;
+    border-radius: 15px;
+}
+
+.espaco_perfil{
+    display:flex;
+    gap: 15px;
+    align-items:center
+}
+
+.espaco_perfil span{
+    color: white;
+    font-family: "DM Sans", sans-serif;
+}
+
+.espaco_perfil label{
+    color: white;
+    align-items: center;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+}
+
+nav{
+    width: 100%;
+    min-height: 64px; /*Para deixar o espaço mínimo de altura*/
+    padding: 16px 5%; /*16px do topo, e 5% da direita. % para acompanhar a tela*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /*Para quebrar os links caso a tela for pequena*/
+    background-color: white;
+    gap: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /*Sombra na parte inferior para efeito flutuante*/
+    position: relative; /*Para ficar  visualmente acima de outro elemento*/
+    z-index: 10;
+}
+
+.menu_inicio{
+    background-color: #c1121f;
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+    color: white;
+    width: 80px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease; /*Transição para o efeito de sobreposição*/
+}
+
+.menu_inicio:hover{
+    transform: scale(1.10); /*Aumenta o tamanho do botão*/
+    background-color: #780000; /*Tom de vermelho mais elegante*/
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /*Sombra de efeito flutuante*/
+    color: white;
+}
+
+nav a{
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    color: #3fa34d;
+    display: inline-flex;/*inline-flex os elementos ficarem na mesma linha e se ajusta ao tamanho da tela*/
+    align-items: center; /*Centraliza os itens verticalmente*/
+}
+
+nav a:hover{
+    color: #013220; 
+}
+
+.fundo_banner{
+    background-color:  rgb(244, 244, 244);
+    gap: 10px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.fundo_banner img{
+    border-radius: 25px;
+    max-width: 100%; /* Para que a imagem ocupe a tela toda sem vazar*/
+    height: auto; /* Deixa a imagem proporcional sem achatar a altura */
+}
+
+aside{
+    background-image: url("./sobrenos.jpg"); /*A url serve para carregar recurso exerno para dentro do CSS*/
+    width: 38%;
+    border-radius: 20px;
+    height: auto;
+    background-color: #fcc490;
+    color: rgba(165, 67, 42, 0.986);
+    padding-left: 25px;
+    padding-top: 30px;
+    margin-left: 5px;
+}
+
+aside h1{
+    font-family: "Vollkorn", serif;
+    font-size: 31px;
+    
+}
+
+aside p{
+    font-family: "Lora", serif;
+    font-size: 15px;
+}
+
+.Espaco_produtos{
+    background-color: white;
+    width: 100%;
+    height: auto; /*Altura auto para comportar quebras de linhas*/
+    align-items: center;
+}
+
+.area_do_titulo{
+    display: flex;
+    background-color: rgb(244, 244, 244);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 15px;
+}
+
+.area_do_titulo h2{
+    font-family: "Vollkorn", serif;
+    font-size: 26px;
+    background-color: rgb(244, 244, 244);
+    color: #013220;
+}
+
+.cards_produtos{
+    background-color: white;
+    display:flex;
+    flex-wrap: wrap; /*Faz os cards irem para baixo se não couberem*/
+    gap: 30px;
+    justify-content: center;
+    padding: 30px 40px; /*Espaçamento para topo e lateral esquerdo*/
+  }
+
+.cards_produtos article{
+    background-color: #ececec;
+    height: auto; /* Altura auto se adapta ao conteúdo */
+    min-height: 315px; /* Altura mínima que o card tem que ter*/
+    width: 100%;
+    max-width: 330px; /* largura máxima para não esticar infinito*/
+    padding: 20px; /* Padding uniforme */
+    box-sizing: border-box;
+    border-style: none;
+    border-radius: 10px;
+}
+
+.cards_produtos h1{
+    font-family: "Vollkorn", serif;
+    font-size: 22px;
+    padding-top: 6px;
+}
+
+span{
+    font-family: "Lora", serif;
+}
+
+.cards_produtos ul{
+    font-family: "Lora", serif;
+    padding-top: 5px;
+    padding-left: 20px; /* Adicionado para as bolinhas da lista aparecerem */
+}
+
+details{
+    background-color: #ececec;
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Deixa a largura interna do card completa*/
+    border-radius: 5px;
+}
+
+img{
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+}
+
+.Comprar{
+    font-family: "DM Sans", sans-serif;
+    background-color: #0d3b66;
+    color: white;
+    border-style: none;
+    border-radius: 2px;
+    width: 90px;
+    height: 25px;
+    transition: all 0.2s ease; /*Transição para o efeito de sobreposição*/
+    margin-left: 15%;
+}
+
+.Comprar:hover{
+    transform: scale(1.10); /*Aumenta o tamanho do botão*/
+    background-color: #000255; /*Tom de vermelho mais elegante*/
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /*Sombra de efeito flutuante*/
+    color: white;
+}
+
+summary{
+    font-family: "DM Sans", sans-serif;
+    color: #0d3b66;
+    font-size: 14px;
+    display: block; /*Remove a seta e deixa apenas o "Ver mais"*/
+    direction: ltr;
+    padding-top: 5px;
+    padding-left: 1px;
+    cursor: pointer; /*Para aparecer a mãozinha*/
+}
+
+.sobre{
+    background-color: #F5F2EB;
+    border-style: groove;
+    border-color: #6F4E37;
+    width: 90%; /*Margem em % para se adaptar de acordo com a tela*/
+    height: auto; /* Altura auto para se adaptar*/
+    min-height: 400px; /* Altura mínima*/
+    border-radius: 50px;
+    padding: 40px; /* Espaçamento interno uniforme*/
+    margin: 40px auto;  /* Centraliza a div automaticamente */
+}
+
+.sobre h1{
+    font-family: "Vollkorn", serif;
+    font-size: 40px;
+    color: #6F4E37;
+}
+
+.sobre p{
+    padding-top: 20px;
+    font-family: "Lora", serif;
+    font-size: 18.5px;
+}
+
+
+.Secao_duvida{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto; /* Altura auto para se adaptar*/
+    background-color:  #ececec;
+    padding-bottom: 40px;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os inputs e o botão */
+    width: 100%;  
+}
+
+.area_de_duvida{
+    display: flex;
+    flex-wrap: wrap; /* Para que o input desça caso falte espaço */
+    padding-top: 40px;
+    gap: 10px;
+}
+
+.Secao_duvida h2{
+    font-family: "Vollkorn", serif;
+    font-size: 26px;
+    color: #013220;
+}
+
+.Secao_duvida input{
+    width: 90%;
+    max-width: 550px; /* Evita que quebre em telas grandes */
+    height: 45px;
+    font-family: "Lora", serif;
+    margin: 20px auto 0 auto; /* Para centralizar o input */
+    padding-left: 20px;
+    border-radius: 12px;
+    border-style: groove;
+    background-color: white;
+    border-color: #c4cab3;
+    display: block; /* Para aceitar largura, altura e quebrar linha */
+}
+
+.botao_enviar{
+    background-color: #c1121f;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    color: white;
+    width: 95px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-style: none;
+}
+
+.botao_enviar:hover{
+    transform: scale(1.10); /*Aumenta o tamanho do botão*/
+    background-color: #780000; /*Tom de vermelho mais elegante*/
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /*Sombra de efeito flutuante*/
+    color: white;
+}
+
+footer{
+    background-color: #013220;
+    display: flex;
+    flex-wrap: wrap; /* Faz as seções do rodapé ficar uma em baixo da outra */
+    justify-content: space-between; /*Deixa os blocos lado a lado */
+    align-items: flex-start;
+    width: 100%;
+    padding: 40px 10%;
+    color: white;
+    gap: 30px;
+}
+
+.bloco_logo{
+    font-size: 10px;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+footer div{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5px;
+}
+
+footer h1{
+    font-family: "Vollkorn", serif;
+    font-size: 18px;
+}
+
+footer p{
+    font-family: "DM Sans", sans-serif;
+    font-size: 11.5px;
+}
+
+.bloco_do_relatorio{
+    display: flex;
+    flex-direction: column; /*Faz o texto ficar um em cima do outro*/
+}
+
+.bloco_do_relatorio a{
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.bloco_do_relatorio p{
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+address{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6px;
+    margin-top: 1px;
+}
+
+address p{
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+}
+
+.copyright{
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
+.sacola {
+    width: 300px;
+    height: 100vh; /* Ocupa a altura inteira da tela do usuário*/
+    background-color: white;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1); /* ✅ sintaxe corrigida */
+    z-index: 2000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -340px; /* Vai esconder a sacola para o lado direito da tela*/
+    transition: 0.3s ease;/*Efeito para deslizar*/
+}
+
+
+
+.sacola.aberta{ /*Essa classe vai ser do JS, para a scola deslizar para dentro da tela.*/
+    right: 0;
+}
+
+
+h3{
+    font-family: "Vollkorn", serif;
+}
+
+.itens_sacola{
+    font-family: "DM Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    border-style: groove;
+    border-radius: 5px;
+    padding: 4%;
+    max-height: 50vh; /* Impede que os itens fujam da tela*/
+    overflow-y: auto; /* Se tiver muitos itens, adiciona barra de rolagem*/
+}
+
+.rodape_sacola{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto; 
+    gap: 10px;
+}
+
+.montante_total{
+    display: flex;
+    justify-content: space-between;
+    border-style: groove;
+    border-radius: 5px;
+    padding: 3%;
+}
+
+h5{
+    font-family: "Vollkorn", serif;
+}
+
+.total_da_sacola{
+    font-family: "Lora", serif;
+}
+
+.finalizar_btn{
+    font-family: "DM Sans", sans-serif;
+    background-color: #c1121f;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-style: none;
+    height: 28px;
+    width: auto;
+}
+
+.finalizar_btn:hover{
+    transform: scale(1.10); /*Aumenta o tamanho do botão*/
+    background-color: #780000; /*Tom de vermelho mais elegante*/
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /*Sombra de efeito flutuante*/
+    color: white;
+}
+
+.continuar_btn{
+    font-family: "DM Sans", sans-serif;
+    background-color: #0d3b66;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-style: none;
+    height: 28px;
+    width: auto;
+}
+
+.continuar_btn:hover{
+    transform: scale(1.10); /*Aumenta o tamanho do botão*/
+    background-color: #000255; /*Tom de vermelho mais elegante*/
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /*Sombra de efeito flutuante*/
+    color: white;
+}
+
+/* Configuração para celular*/
+@media (max-width: 768px) {
+    
+    /* O cabeçalho deixa a logo, a pesquisa e o perfil na vertical um embaixo do outro*/
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .Area_de_Pesquisa input {
+        max-width: 100%; /* Input vai usar todo o espaço do celular */
+    }
+
+    /* O menu de navegação  deixa os links centralizados */
+    nav {
+        justify-content: center;
+        padding-left: 0;
+        gap: 15px;
+    }
+
+    /* O Banner e o Aside ficam um embaixo do outro*/
+    .fundo_banner {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .fundo_banner img {
+        margin-left: 0; /* Remove o recuo no celular */
+        width: 100%;
+    }
+
+    aside {
+        width: 100%; /* Ocupa a largura total no celular */
+        margin-left: 0;
+    }
+
+    /* Seção Sobre diminui o texto gigante para caber na tela do celular */
+    .sobre {
+        width: 95%;
+        padding: 20px;
+    }
+    
+    .sobre h1 {
+        font-size: 28px;
+        padding-top: 20px;
+    }
+    
+    .sobre p {
+        font-size: 15px;
+    }
+
+    .Secao_duvida{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto; /* Altura auto para se adaptar*/
+    background-color:  #ececec;
+    padding-bottom: 40px;
+    align-items: center;
+}
+
+    /* Rodapé no modo coluna,tudo centralizado e embaixo do outro */
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .E_logo, .bloco_do_relatorio, address {
+        align-items: center;
+        width: 100%;
+    }
+}
+
+/* Estilização da página de login */
