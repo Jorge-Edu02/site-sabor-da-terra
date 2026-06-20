@@ -123,11 +123,11 @@ button{
     }
 
     body { 
-    flex-direction: column;
-    display: flex;
-    justify-content: center; /* Centraliza na horizontal */
-    align-items: center;     /* Centraliza na vertical */
-    min-height: 100vh;       /* Faz o pai ocupar a altura toda da tela */
-    margin: 0;               /* Remove margens padrão do body */
-  }
+        flex-direction: column;
+        display: flex;
+        justify-content: center; /* Centraliza na horizontal */
+        align-items: center;     /* Centraliza na vertical */
+        min-height: 100vh;       /* Faz o pai ocupar a altura toda da tela */
+        margin: 0;               /* Remove margens padrão do body */
+    }
 }
