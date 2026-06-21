@@ -71,6 +71,12 @@ header{
     align-items:center
 }
 
+.espaco_perfil span{
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+}
+
 .espaco_perfil label{
     color: white;
     align-items: center;
